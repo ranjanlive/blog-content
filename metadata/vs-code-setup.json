@@ -1,11 +1,9 @@
 {
-    "id": "vs-code-setup",
-    "title": "How to Download and Install VS Code",
-    "date": "2024-03-10",
+    "id": "vscode-setup",
+    "thumbnail": "https://raw.githubusercontent.com/ranjanlive/blog-content/main/images/vscode-thumb.jpg",
+    "title": "How to Setup VS Code",
+    "description": "Complete guide to setting up Visual Studio Code for development",
     "author": "Rajeev Ranjan",
-    "tags": ["tools", "setup", "vscode"],
-    "coverImage": "/images/vs-code-featured.jpg",
-    "excerpt": "A complete guide to downloading, installing, and setting up Visual Studio Code for development.",
-    "readTime": 5,
-    "content": "# How to Download and Install VS Code\n\n[Your markdown content here]"
+    "date": "2024-03-10",
+    "blog_url": "https://raw.githubusercontent.com/ranjanlive/blog-content/main/blogs/vscode-setup.html"
 }
