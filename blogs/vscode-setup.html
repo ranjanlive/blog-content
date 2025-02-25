@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code Setup Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .blog-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background: var(--bg-secondary);
+            border-radius: 15px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .blog-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .extension-card {
+            background: var(--bg-primary);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .extension-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+        }
+
+        .extension-info {
+            flex: 1;
+        }
+
+        .extension-name {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .extension-description {
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .settings-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+
+        .tip {
+            background: rgba(46, 213, 115, 0.1);
+            border-left: 4px solid #2ed573;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+</head>
+<body class="theme-skyblue">
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                <i class="fas fa-arrow-left"></i> Back to Blogs
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <article class="blog-content">
+            <h1>Complete VS Code Setup Guide</h1>
+            
+            <div class="blog-meta" style="text-align: center; margin: 20px 0;">
+                <span><i class="far fa-calendar"></i> March 10, 2024</span> • 
+                <span><i class="far fa-clock"></i> 15 min read</span>
+            </div>
+
+            <img src="../images/vscode-setup.jpg" alt="VS Code Setup" class="blog-image">
+
+            <h2>Essential Extensions</h2>
+            
+            <div class="extension-card">
+                <img src="../images/prettier-icon.png" alt="Prettier" class="extension-icon">
+                <div class="extension-info">
+                    <div class="extension-name">Prettier - Code formatter</div>
+                    <div class="extension-description">Automatic code formatting for multiple languages</div>
+                </div>
+            </div>
+
+            <div class="extension-card">
+                <img src="../images/live-server-icon.png" alt="Live Server" class="extension-icon">
+                <div class="extension-info">
+                    <div class="extension-name">Live Server</div>
+                    <div class="extension-description">Launch a development local server with live reload</div>
+                </div>
+            </div>
+
+            <div class="extension-card">
+                <img src="../images/gitlens-icon.png" alt="GitLens" class="extension-icon">
+                <div class="extension-info">
+                    <div class="extension-name">GitLens</div>
+                    <div class="extension-description">Supercharge Git within VS Code</div>
+                </div>
+            </div>
+
+            <h2>Recommended Settings</h2>
+            <div class="settings-block">
+{
+    "editor.fontFamily": "'Fira Code', monospace",
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.colorTheme": "One Dark Pro",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "files.autoSave": "onFocusChange"
+}
+            </div>
+
+            <div class="tip">
+                <strong>Pro Tip:</strong> Install Fira Code font for programming ligatures and better readability.
+            </div>
+
+            <h2>Color Themes</h2>
+            <p>Popular themes to enhance your coding experience:</p>
+            <ul>
+                <li>One Dark Pro</li>
+                <li>Dracula Official</li>
+                <li>GitHub Theme</li>
+                <li>Night Owl</li>
+                <li>Material Theme</li>
+            </ul>
+
+            <h2>Keyboard Shortcuts</h2>
+            <p>Essential shortcuts to boost productivity:</p>
+            <ul>
+                <li><strong>Ctrl + P</strong>: Quick file navigation</li>
+                <li><strong>Ctrl + Shift + P</strong>: Command palette</li>
+                <li><strong>Alt + Up/Down</strong>: Move line up/down</li>
+                <li><strong>Ctrl + D</strong>: Select next occurrence</li>
+                <li><strong>Ctrl + /</strong>: Toggle comment</li>
+            </ul>
+
+            <h2>Git Integration</h2>
+            <p>VS Code's built-in Git features:</p>
+            <ul>
+                <li>Source Control panel (Ctrl + Shift + G)</li>
+                <li>Inline blame annotations with GitLens</li>
+                <li>Branch creation and switching</li>
+                <li>Commit history visualization</li>
+                <li>Merge conflict resolution</li>
+            </ul>
+
+            <div class="tip">
+                <strong>Backup Tip:</strong> Use Settings Sync to backup your VS Code settings across devices.
+            </div>
+        </article>
+    </div>
+</body>
+</html>
